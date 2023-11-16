@@ -64,3 +64,6 @@ app.all("*", function(req, res, next) {
 const port = process.env.PORT || 5001;
 
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));
+
+// Export the Express API
+module.exports = app
